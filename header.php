@@ -33,4 +33,5 @@
 			<nav id="headerNavigation" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'header_menu' ) ); // remember to assign a menu in the admin to remove the container div ?>
 			</nav>
+			<h1>Cool</h1>
 		</header>

@@ -1,0 +1,18 @@
+section.offer-section{
+	@extend %white_text;
+	padding-bottom:0;
+	background:$primary-color;
+	form{
+		.btn{
+			@include breakpoint(sm){
+				width:100%;
+			}
+		}
+		@include breakpoint(md){
+			.form-control{
+				padding: 0px;
+				padding-left: 8px;
+			}
+		}
+	}
+}

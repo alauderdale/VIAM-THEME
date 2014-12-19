@@ -1,0 +1,75 @@
+//sections
+section{
+  padding:$baseline*3 0;
+  &.page-header-section{
+    background-size:cover;
+    padding:$baseline*2 0;
+    h1{
+      text-shadow:0 1px 13px rgba(0,0,0,.3);
+    }
+  }
+  &.off-white-bg{
+  	// background:url(../images/off_white_sec_bg.png) repeat-y right;
+    background:#fafafa;
+    border-bottom:1px solid $medium-gray-color;
+    border-top:1px solid $medium-gray-color;
+  }
+  &.inverse-section{
+  	@extend %white_text;
+    background-color:$primary-color;
+    a{
+      color:white;
+      border-color:white;
+    }
+  }
+  &.founder-section{
+  	background:url(../images/company/headshot.png) right bottom no-repeat;
+  	.text-container{
+	  	@include breakpoint(sm){
+				h1,h2,h3,h4,h5,h6,p,small,li{
+			    color:white!important;
+			  }
+	  		background:rgba(255,102,0,.8);
+	  		text-align:center;
+	  		padding:$baseline/2;
+
+	  	}
+  	}
+    @include breakpoint(md){
+      background:url(../images/company/headshot.png) 340px bottom no-repeat;
+    }
+    @include breakpoint(sm){
+      background:url(../images/company/headshot.png) center bottom no-repeat;
+    }
+  }
+  &.apart-section{
+  	background:url(../images/company/apart_bg.png) no-repeat right bottom;
+  	background-size:cover;
+  }
+  &.icons-section{
+  	h5{
+  		color:$primary-color;
+  	}
+    .item{
+      padding:$baseline $baseline/2;
+      cursor:default;
+      @include transition(linear all $base-transition-duration);
+      position:relative;
+      &:hover{
+        box-shadow:0 3px 20px rgba(0, 0, 0, 0.1);
+        border-radius:$base-border-radius;
+      }
+    }
+  }
+  &.case-study{
+    text-align:center;
+    background-color:shade($link-color,80%);
+    @extend %white_text;
+    h2{
+      color:$primary-color!important;
+    }
+  }
+}
+
+
+

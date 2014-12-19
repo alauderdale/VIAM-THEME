@@ -1,0 +1,52 @@
+// color vars
+
+$primary-color: #ff6600;
+$secondary-color: #0084b4;
+$tertiary-color: #2f7bbd;
+$medium-gray-color: #eeeeee;
+$light-gray-color: #fafafa;
+
+$gray-color:#dddddd;
+$green-color: #85C342;
+$black-color:#1f2229;
+$yellow-color:#ffd266;
+
+$success-color:$green-color;
+$warning-color:#f0ad4e;
+
+
+$text-color: #444444;
+$body-text-color: #666666;
+$dark-text-color: $text-color;
+
+
+$link-color: $secondary-color;
+$link-hover-color:shade($secondary-color,50%);
+$top-nav-link-color:tint($text-color,30%);
+
+$background-color: #ffffff;
+
+// units
+
+$baseline: 28px;
+$base-border-radius:3px;
+
+
+// font vars
+
+$light-font-name:'open_sanslight', Helvetica, Arial, sans-serif;
+$regular-font-name:'open_sansregular', Helvetica, Arial, sans-serif;
+$medium-font-name:'open_sanssemibold', Helvetica, Arial, sans-serif;
+$bold-font-name:'open_sansbold', Helvetica, Arial, sans-serif;
+$extra-bold-font-name:'open_sansextrabold', Helvetica, Arial, sans-serif;
+$flourish-font-name-bold: 'brandon_grotesquebold';
+$flourish-font-name-italic: 'brandon_grotesqueRgIt';
+$social-font-name: 'socialicoregular';
+
+//transitions
+
+$base-transition-duration:.2s;
+
+//text columns
+
+$text-column-gutter-width: $baseline;

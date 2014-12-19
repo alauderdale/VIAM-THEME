@@ -1,0 +1,34 @@
+section.subnav-container{
+	padding:$baseline/4 0;
+	background:$light-gray-color;
+	border-bottom:1px solid #eee;
+	width:100%;
+}
+ul.global-subnav{
+
+	li{
+		font-size:.8em;
+		@include breakpoint(md){
+			font-size:.65em;
+		}
+		@include breakpoint(sm){
+			font-size:.7em;
+		}
+		&.active{
+			a{
+				font-family:$bold-font-name;
+				background:$link-color;
+				color:white;
+			}
+		}
+		a{
+			display:block;
+			padding-top:$baseline/4;
+			padding-bottom:$baseline/4;
+			margin-top:$baseline/4;
+			margin-bottom:$baseline/4;
+			@include transition-duration($base-transition-duration);
+			border-radius:$base-border-radius;
+		}
+	}
+}

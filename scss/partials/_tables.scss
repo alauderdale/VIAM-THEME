@@ -1,0 +1,77 @@
+#company_tabs{
+	ul.nav-tabs{
+		display:table;
+		text-align:center;
+		background:transparent;
+		margin:0 auto;
+		border:none;
+		li{
+			padding:$baseline/2 0 $baseline 0;
+			text-align:center;
+			display:table-cell;
+			margin-right:20px;
+			@include breakpoint(sm){
+				&.active{
+						background:none!important;
+				}
+			}
+			&:last-of-type{
+				margin-right:0;
+			}
+			a{
+				display:block;
+				width:100px;
+				height:100px;
+				border-radius:200px;
+				border:1px solid white;
+				opacity:.5;
+				text-align:center;
+				@include breakpoint(md){
+					width:70px;
+					height:70px;
+				}
+				@include breakpoint(sm){
+					border:none;
+					width:30px;
+					height:30px;
+				}
+				img{
+					text-align:center;
+					margin:0 auto;
+					margin-top:28px;
+					max-width:30px;
+					@include breakpoint(md){
+						margin-top:10px;
+					}
+				}
+			}
+			&:hover,&:active,&:focus{
+
+				a{
+					background:none;
+					border-color:$primary-color;
+					opacity:1;
+					@include transition-duration($base-transition-duration)
+				}
+			}
+			&.active{
+				background:url(../images/company/company_tab_active.png) no-repeat bottom center;
+				a{
+					border-color:$primary-color;
+					opacity:1;
+					background:none;
+				}
+			}
+		}
+	}
+	.tab-pane{
+		padding-top:$baseline*2;
+		min-height:200px;
+		h5{
+			color:$primary-color!important;
+		}
+		@include breakpoint(sm){
+			padding-top:0;
+		}
+	}
+}

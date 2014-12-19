@@ -1,0 +1,31 @@
+a{
+	color:$link-color;
+	text-decoration:none;
+	&:hover, &:active, , &:focus{
+		text-decoration:none;
+	}
+	&:hover{
+		color:$link-hover-color;
+	}
+	&.flourish-link{
+		font-family:$flourish-font-name-italic;
+		font-style:italic;
+		padding-bottom:5px;
+		border-bottom:1px solid $link-color;
+		&:hover{
+			border-color:$link-hover-color;
+		}
+	}
+	&.underline-link{
+		padding-bottom:5px;
+		border-bottom:1px solid $link-color;
+	}
+}
+
+.btn{
+	border-radius:$base-border-radius;
+	&.btn-primary{
+		background-color:$link-color;
+		border:$link-color;
+	}
+}
