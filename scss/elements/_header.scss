@@ -34,7 +34,7 @@ header{
 						color:$primary-color;
 					}
 				}
-				&.active{
+				&.active, &.current_page_item{
 					a{
 						color:$text-color;
 						&:hover{

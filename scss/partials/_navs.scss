@@ -14,7 +14,7 @@ ul.global-subnav{
 		@include breakpoint(sm){
 			font-size:.7em;
 		}
-		&.active{
+		&.active, &.current_page_item{
 			a{
 				font-family:$bold-font-name;
 				background:$link-color;

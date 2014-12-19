@@ -29,6 +29,9 @@ jQuery(document).ready(function($){
       e.preventDefault()
       $(this).tab('show')
     })
+    //get the first one set up
+    $( "#company_tabs ul li:first-of-type" ).addClass( "active" );
+    $( ".tab-pane:first-of-type" ).addClass( "in active" );
 
 
 });

@@ -32,6 +32,10 @@ function boiler_setup() {
 	 */
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'boiler' ),
+		'industries' => __( 'Industries Menu', 'boiler' ),
+		'services' => __( 'Services Menu', 'boiler' ),
+		'support' => __( 'Support Menu', 'boiler' ),
+		'background' => __( 'Background Menu', 'boiler' ),
 	) );
 
 	/**
@@ -167,3 +171,4 @@ require get_template_directory() . '/inc/jetpack.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/custom_post_types.php';

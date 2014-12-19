@@ -4,9 +4,17 @@ section{
   &.page-header-section{
     background-size:cover;
     padding:$baseline*2 0;
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    background-position:center top;
     h1{
       text-shadow:0 1px 13px rgba(0,0,0,.3);
     }
+  }
+  &.img-bg{
+     background-repeat:no-repeat;
+     background-size:cover;
+     background-position:center center;
   }
   &.off-white-bg{
   	// background:url(../images/off_white_sec_bg.png) repeat-y right;
@@ -64,10 +72,17 @@ section{
   &.case-study{
     text-align:center;
     background-color:shade($link-color,80%);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size:cover;
     @extend %white_text;
     h2{
       color:$primary-color!important;
     }
+  }
+  &.logo-rings-section{
+
+    background: url('../images/partners/partners_graphic.png') no-repeat center center $primary-color;
   }
 }
 

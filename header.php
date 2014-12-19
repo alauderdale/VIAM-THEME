@@ -27,11 +27,56 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container">
-		<header id="globalHeader">
-			<h1 id="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<nav id="headerNavigation" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'header_menu' ) ); // remember to assign a menu in the admin to remove the container div ?>
-			</nav>
-			<h1>Cool</h1>
-		</header>
+		<?php if ( is_admin_bar_showing() ) { ?>
+
+		<style type="text/css">
+			header.main-nav-container{
+				top:32px;
+			}
+			html{
+				margin-top:0!important;
+			}
+      body{
+        padding-top: 122px;
+      }
+			#wpadminbar{
+				position: fixed;
+			}
+		</style>
+
+
+		<?php } ?>
+
+    <header class='main-nav-container'>
+      <div class='container'>
+        <div class='pull-left'>
+          <a class='logo' href='<?php echo esc_url( home_url( '/' ) ); ?>'></a>
+        </div>
+        <div class='pull-right'>
+          <?php wp_nav_menu( array( 
+          'theme_location' => 'primary', 
+          'container' => false, 
+          'menu_class' => 'list-inline desktop-nav',
+          'items_wrap'  => '<ul id="%1$s" class="%2$s">%3$s</ul>' 
+          )); ?>
+          <a class='menu-toggle' href='javaScript:void(0);' id='js-menu-button-open'>
+            <i class='fa fa-navicon'></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <nav class='menu-drop'>
+      <div class='container'>
+        <a class='menu-toggle pull-right' href='javaScript:void(0);' id='js-menu-button-close'>
+          <i class='fa fa-times'></i>
+        </a>
+        <div class='clearfix'></div>
+        <?php wp_nav_menu( array( 
+        'theme_location' => 'primary', 
+        'container' => false, 
+        'menu_class' => 'list-unstyled mobile-nav-main',
+        'items_wrap'  => '<ul id="%1$s" class="%2$s">%3$s</ul>' 
+        )); ?>
+      </div>
+    </nav>
+    <!-- end menu -->
