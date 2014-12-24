@@ -7,7 +7,7 @@ Template Name: Service
 <?php get_header(); ?>
 
 
-<section class='inverse-section text-center page-header-section' style='background-image:url(<?php the_field('hero_background_image');?>);'>
+        <section class='inverse-section text-center page-header-section' style='background-image:url(<?php the_field('hero_background_image');?>);'>
           <div class='container'>
             <div class='row'>
               <div class='col-sm-1'></div>
@@ -49,7 +49,7 @@ Template Name: Service
               </div>
               <div class='col-md-5'>
                 <div class='text-center'>
-                  <?php the_post_thumbnail('full', array('class' => 'img-responsive margin-auto padded double-padding-left content-img')); ?>
+                  <?php the_post_thumbnail('full', array('class' => 'img-responsive margin-auto padded content-img no-padding-right')); ?>
                 </div>
               </div>
             </div>

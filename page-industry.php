@@ -9,7 +9,7 @@ Template Name: Industry
 
 
 
- <section class='inverse-section text-center page-header-section' style='background: url(<?php the_field('hero_background_image');?>) no-repeat scroll center top;'>
+ <section class='inverse-section text-center page-header-section' style='background-image: url(<?php the_field('hero_background_image');?>);'>
           <div class='container'>
             <div class='row'>
               <div class='col-sm-1'></div>
@@ -41,7 +41,7 @@ Template Name: Industry
             <div class='row'>
               <div class='col-sm-5'>
                 <div class='text-center'>
-                  <?php the_post_thumbnail('full', array('class' => 'img-responsive margin-auto double-padding-right margin-bottom half-padding-top content-img')); ?>
+                  <?php the_post_thumbnail('full', array('class' => 'img-responsive margin-auto margin-bottom half-padding-top content-img')); ?>
                 </div>
               </div>
               <div class='col-sm-7'>

@@ -1,6 +1,6 @@
 //sections
 section{
-  padding:$baseline*3 0;
+  padding:$baseline*2 0;
   &.page-header-section{
     background-size:cover;
     padding:$baseline*2 0;
@@ -24,7 +24,7 @@ section{
   }
   &.inverse-section{
   	@extend %white_text;
-    background-color:$primary-color;
+    background-color:shade($link-color,80%);
     a{
       color:white;
       border-color:white;
@@ -75,6 +75,7 @@ section{
     background-repeat: no-repeat;
     background-position:center center;
     background-size:cover;
+    background-attachment:fixed;
     @extend %white_text;
     h2{
       color:$primary-color!important;

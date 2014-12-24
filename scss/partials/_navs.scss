@@ -9,7 +9,10 @@ ul.global-subnav{
 	li{
 		font-size:.8em;
 		@include breakpoint(md){
-			font-size:.65em;
+			font-size:.75em;
+			a{
+				padding:0;
+			}
 		}
 		@include breakpoint(sm){
 			font-size:.7em;
