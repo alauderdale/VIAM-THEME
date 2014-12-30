@@ -6,7 +6,7 @@ Template Name: Service
 
 <?php get_header(); ?>
 
-
+        <!-- <section class="inverse-section text-center page-header-section parallax-window" data-parallax="scroll" data-image-src="<?php the_field('hero_background_image');?>" data-positionX="center" data-positionY="center"> -->
         <section class='inverse-section text-center page-header-section' style='background-image:url(<?php the_field('hero_background_image');?>);'>
           <div class='container'>
             <div class='row'>

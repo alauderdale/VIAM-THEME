@@ -14,7 +14,7 @@ header{
 	&.main-nav-container{
 		position:fixed;
 		top:0;
-		z-index: 800;
+		z-index: 99999;
 		display:inline-block;
 		width: 100%;
 		background:white;
@@ -34,7 +34,7 @@ header{
 						color:$primary-color;
 					}
 				}
-				&.active, &.current_page_item{
+				&.active, &.current_page_item, &.current-page-ancestor{
 					a{
 						color:$text-color;
 						&:hover{
@@ -69,13 +69,13 @@ top:0;
 right:0;
 position: fixed;
 opacity: 0;
-z-index: 901;
+z-index: 100000;
 height: 100%;
 width: 80%;
 padding:$baseline/2 0;
 @include transform(translate(127%,0));
 margin-top: -1px;
-background:shade($link-color,80%);
+background:$dark-link-color;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center center;

@@ -11,3 +11,22 @@
 		font-style:italic;
 	}
 }
+
+//layers slider
+
+.ls-fullwidth .ls-nav-prev,.ls-fullwidth .ls-nav-next{
+	background-image:url(../images/new_slider_bg.png)!important;
+}
+
+.ls-inner{
+	background-size:cover!important;
+}
+
+@include breakpoint(sm){
+	.ls-fullwidth .ls-nav-prev{
+		left:-7px!important;
+	}
+	.ls-fullwidth .ls-nav-next{
+		right:-7px!important;
+	}
+}

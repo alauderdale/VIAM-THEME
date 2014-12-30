@@ -7,9 +7,9 @@ Template Name: Industry
 <?php get_header(); ?>
 
 
+      <!-- <section class="inverse-section text-center page-header-section parallax-window" data-parallax="scroll" data-image-src="<?php the_field('hero_background_image');?>" data-positionX="center" data-positionY="center"> -->
 
-
- <section class='inverse-section text-center page-header-section' style='background-image: url(<?php the_field('hero_background_image');?>);'>
+        <section class='inverse-section text-center page-header-section' style='background-image: url(<?php the_field('hero_background_image');?>);'>
           <div class='container'>
             <div class='row'>
               <div class='col-sm-1'></div>
@@ -54,7 +54,7 @@ Template Name: Industry
           </div>
         </section>
         
-        <section class='case-study' style='background-image:url(<?php the_field('case_study_bg');?>);'>
+        <section class="case-study parallax-window" data-parallax="scroll" data-image-src="<?php the_field('case_study_bg');?>" data-positionX="center" data-positionY="center">
           <div class='container'>
             <div class='row'>
               <div class='col-sm-2'></div>

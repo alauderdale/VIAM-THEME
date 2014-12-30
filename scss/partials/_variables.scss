@@ -24,7 +24,9 @@ $link-color: $secondary-color;
 $link-hover-color:shade($secondary-color,50%);
 $top-nav-link-color:tint($text-color,30%);
 
-$background-color: #ffffff;
+$dark-link-color:shade($link-color,80%);
+
+$background-color: $dark-link-color;
 
 // units
 

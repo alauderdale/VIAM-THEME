@@ -30,7 +30,10 @@
 // }
 
 #global-footer{
-	background:shade($link-color,80%);
+	section{
+		background-color:$dark-link-color;
+	}
+	background-color:$dark-link-color;
 	.logo-container{
 		p{
 			@include breakpoint(sm){

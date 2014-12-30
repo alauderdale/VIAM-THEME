@@ -13,8 +13,8 @@ Template Name: Company
 
 	<?php endwhile; // end of the loop. ?> -->
 
-
-<section class='inverse-section text-center page-header-section' style='background:url(<?php bloginfo( 'template_url' ); ?>/images/company/header_bg_2.png) no-repeat center, url(<?php the_field('hero_background_image');?>) no-repeat scroll center top; background-size:cover;'>
+<section class="inverse-section text-center parallax-window page-header-section" data-parallax="scroll" data-image-src="<?php the_field('hero_background_image');?>" data-positionX="center" data-positionY="center">
+<!-- <section class='inverse-section text-center page-header-section' style='background:url(<?php bloginfo( 'template_url' ); ?>/images/company/header_bg_2.png) no-repeat center, url(<?php the_field('hero_background_image');?>) no-repeat scroll center top; background-size:cover;'> -->
   <div class='container'>
     <div class='row'>
       <div class='col-sm-1'></div>
@@ -29,10 +29,8 @@ Template Name: Company
             Play
           </span>
         </h1>
-        <p>
-          <small>
-            <?php the_field('header_sub_text');?>
-          </small>
+        <p class="hero-sub-text">
+          <?php the_field('header_sub_text');?>
         </p>
       </div>
       <div class='col-sm-1'></div>
@@ -50,7 +48,8 @@ Template Name: Company
     </div>
   </div>
 </section>
-<section class='inverse-section text-center bg-cover' style='background-image:url(<?php bloginfo( 'template_url' ); ?>/images/company/values_slider_bg.png);'>
+<!-- <section class='inverse-section text-center bg-cover' style='background-image:url(<?php bloginfo( 'template_url' ); ?>/images/company/values_slider_bg.png);'> -->
+  <section class="inverse-section text-center parallax-window" data-parallax="scroll" data-image-src="<?php bloginfo( 'template_url' ); ?>/images/company/values_slider_bg.png" data-positionX="center" data-positionY="center">
   <div class='container'>
     <div class='row'>
       <div class='col-sm-1'></div>

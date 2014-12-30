@@ -1,9 +1,16 @@
 //sections
 section{
   padding:$baseline*2 0;
+  background-color:white;
   &.page-header-section{
     background-size:cover;
-    padding:$baseline*2 0;
+    padding:$baseline*3 0;
+    @include breakpoint(lg){
+      padding:$baseline*2 0;
+    }
+    @include breakpoint(sm){
+      padding:$baseline 0;
+    }
     background-repeat:no-repeat;
     background-attachment:scroll;
     background-position:center top;
@@ -30,8 +37,11 @@ section{
       border-color:white;
     }
   }
+  &.parallax-window{
+    background-color:transparent!important;
+  }
   &.founder-section{
-  	background:url(../images/company/headshot.png) right bottom no-repeat;
+  	background:url(../images/company/headshot.png) right bottom no-repeat white;
   	.text-container{
 	  	@include breakpoint(sm){
 				h1,h2,h3,h4,h5,h6,p,small,li{
@@ -51,7 +61,7 @@ section{
     }
   }
   &.apart-section{
-  	background:url(../images/company/apart_bg.png) no-repeat right bottom;
+  	background:url(../images/company/apart_bg.png) no-repeat right bottom white;
   	background-size:cover;
   }
   &.icons-section{

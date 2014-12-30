@@ -137,11 +137,13 @@ function boiler_scripts_styles() {
 
 	wp_enqueue_script( 'jquery' , array(), '', true );
 
-	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2.min.js', '2.6.2', true );
+	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2.min.js', '20120206', true );
 
-	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/vendor/bootstrap.js', '2.6.2', true );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/vendor/bootstrap.js', '20120206', true );
 
-	wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/js/vendor/jquery.fancybox.pack.js', '2.6.2', true );
+	wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/js/vendor/jquery.fancybox.pack.js', '20120206', true );
+
+	wp_enqueue_script( 'paralax', get_template_directory_uri() . '/js/vendor/parallax.min.js', '20120206', true );
 
 	wp_enqueue_script( 'boiler-plugins', get_template_directory_uri() . '/js/plugins.js', array(), '20120206', true );
 
