@@ -19,9 +19,7 @@ ul.global-subnav{
 		}
 		&.active, &.current_page_item{
 			a{
-				font-family:$bold-font-name;
-				background:$link-color;
-				color:white;
+				background:$gray-color;
 			}
 		}
 		a{
@@ -31,7 +29,7 @@ ul.global-subnav{
 			margin-top:$baseline/4;
 			margin-bottom:$baseline/4;
 			@include transition-duration($base-transition-duration);
-			border-radius:$base-border-radius;
+			border-radius:0;
 		}
 	}
 }
