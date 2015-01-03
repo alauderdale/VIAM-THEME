@@ -354,7 +354,7 @@ p{
 //lists
 
 
-ul.list-default{
+ul.list-default, .main-content ul{
   // list-style-image:url(images/bullet.png);
   font-size:.8em;
   margin-bottom:$baseline;
@@ -396,10 +396,8 @@ ul.list-icons{
   }
 }
 
-// .hero-sub-text{
-//   background:rgba(0,0,0,.4);
-//   border-radius:$base-border-radius;
-//   padding:$baseline;
-// }
+.hero-sub-text{
+  text-shadow:0 1px 9px rgba(0,0,0,.9);
+}
 
 

@@ -18,6 +18,11 @@ section{
       text-shadow:0 1px 13px rgba(0,0,0,.3);
     }
   }
+  &.home-infographic{
+    h2{
+      color:#4ea2b7;
+    }
+  }
   &.img-bg{
      background-repeat:no-repeat;
      background-size:cover;
@@ -54,10 +59,10 @@ section{
 	  	}
   	}
     @include breakpoint(md){
-      background:url(../images/company/headshot.png) 340px bottom no-repeat;
+      background:url(../images/company/headshot.png) 420px bottom no-repeat white;
     }
     @include breakpoint(sm){
-      background:url(../images/company/headshot.png) center bottom no-repeat;
+      background:url(../images/company/headshot.png) center bottom no-repeat white;
     }
   }
   &.apart-section{
@@ -89,6 +94,9 @@ section{
     @extend %white_text;
     h2{
       color:$primary-color!important;
+    }
+    p{
+      font-size:1.1em;
     }
   }
   &.logo-rings-section{

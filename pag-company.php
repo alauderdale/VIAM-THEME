@@ -6,12 +6,6 @@ Template Name: Company
 
 <?php get_header(); ?>
 
-<!-- 	<?php while ( have_posts() ) : the_post(); ?>
-
-    <?php get_template_part( 'content', 'page_header' ); ?>
-		<?php get_template_part( 'content', 'page' ); ?>
-
-	<?php endwhile; // end of the loop. ?> -->
 
 <section class="inverse-section text-center parallax-window page-header-section" data-parallax="scroll" data-image-src="<?php the_field('hero_background_image');?>" data-positionX="center" data-positionY="center">
 <!-- <section class='inverse-section text-center page-header-section' style='background:url(<?php bloginfo( 'template_url' ); ?>/images/company/header_bg_2.png) no-repeat center, url(<?php the_field('hero_background_image');?>) no-repeat scroll center top; background-size:cover;'> -->
@@ -20,14 +14,7 @@ Template Name: Company
       <div class='col-sm-1'></div>
       <div class='col-sm-10'>
         <h1>
-          Wherever You
-          <span class='bold-font-name'>
-            Work
-          </span>
-          or
-          <span class='bold-font-name'>
-            Play
-          </span>
+          <?php the_title(); ?>
         </h1>
         <p class="hero-sub-text">
           <?php the_field('header_sub_text');?>
@@ -42,7 +29,9 @@ Template Name: Company
     <div class='row'>
       <div class='col-md-1 col-lg-2'></div>
       <div class='col-md-10 col-lg-8'>
+        <?php while ( have_posts() ) : the_post(); ?>
       	<?php the_content(); ?>
+        <?php endwhile; // end of the loop. ?>
       </div>
       <div class='col-md-1 col-lg-2'></div>
     </div>

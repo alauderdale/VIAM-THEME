@@ -20,13 +20,14 @@
 
 .ls-inner{
 	background-size:cover!important;
+
 }
 
 @include breakpoint(sm){
 	.ls-fullwidth .ls-nav-prev{
-		left:-7px!important;
+		left:0px!important;
 	}
 	.ls-fullwidth .ls-nav-next{
-		right:-7px!important;
+		right:0px!important;
 	}
 }

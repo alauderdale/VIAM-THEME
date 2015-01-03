@@ -12,9 +12,11 @@ Template Name: Simple Page
     <section>
     	<div class="container">
     		<div class="row">
-    			<div class="col-lg-12">
+    			<div class="col-md-2"></div>
+    			<div class="col-md-8">
 						<?php get_template_part( 'content', 'page' ); ?>
 					</div>
+					<div class="col-md-2"></div>
 				</div>
 			</div>
 		</section>

@@ -2,6 +2,44 @@ section.offer-section{
 	@extend %white_text;
 	padding-bottom:0;
 	background:$primary-color;
+	.wpcf7-form{
+		@extend .form-inline;
+		p{
+			display:inline;
+		}
+		.btn{
+			@include breakpoint(sm){
+				width:100%;
+			}
+		}
+		@include breakpoint(md){
+			.form-control{
+				padding: 0px;
+				padding-left: 8px;
+			}
+		}
+		span.wpcf7-not-valid-tip{
+			color:white;
+			font-size:.8em;
+			margin-bottom:-24px;
+		}
+		.wpcf7-response-output{
+			text-align:center;
+			border-width:1px;
+			border-radius:$base-border-radius;
+			position:relative;
+			top:24px;
+			padding:$baseline/2 0;
+		}
+		div.wpcf7-validation-errors{
+			color:shade(#f7e700,80%);
+			background:tint(#f7e700,80%);
+		}
+		div.wpcf7-mail-sent-ok{
+			color:shade(#398f14,80%);
+			background:tint(#398f14,80%);
+		}
+	}
 	form{
 		.btn{
 			@include breakpoint(sm){
