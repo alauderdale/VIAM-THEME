@@ -48,21 +48,22 @@ section{
   &.founder-section{
   	background:url(../images/company/headshot.png) right bottom no-repeat white;
   	.text-container{
-	  	@include breakpoint(sm){
-				h1,h2,h3,h4,h5,h6,p,small,li{
-			    color:white!important;
-			  }
-	  		background:rgba(255,102,0,.8);
-	  		text-align:center;
-	  		padding:$baseline/2;
+	  	// @include breakpoint(sm){
+				// h1,h2,h3,h4,h5,h6,p,small,li{
+			 //    color:white!important;
+			 //  }
+	  	// 	background:rgba(255,102,0,.8);
+	  	// 	text-align:center;
+	  	// 	padding:$baseline/2;
 
-	  	}
+	  	// }
   	}
     @include breakpoint(md){
       background:url(../images/company/headshot.png) 420px bottom no-repeat white;
     }
     @include breakpoint(sm){
       background:url(../images/company/headshot.png) center bottom no-repeat white;
+      padding-bottom:337px!important;
     }
   }
   &.apart-section{
